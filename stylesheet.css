@@ -26,6 +26,12 @@ nav {
   text-decoration: none;
 }
 
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
 body {
   background-color: #D4C4C7;
   font-family: 'PT Serif', serif;
@@ -42,11 +48,13 @@ p {
 
 a:link {
   color: #740a22;
-  text-decoration: none;
+}
+a:visited {
+  color: #740a22;
 }
 a:hover {
   color: #740a22;
   background-color: #E4C8CF;
   font-weight: bolder;
-  opacity: 0.75;
+  opacity: 0.6;
 }

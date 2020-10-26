@@ -35,3 +35,11 @@ p {
   padding-right: 50px;
   margin: 50px;
 }
+
+a:link {
+  color: #740a22;
+}
+a:hover {
+  color: #740a22;
+  background-color: EBC1CB;
+}

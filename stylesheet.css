@@ -30,6 +30,7 @@ nav {
   text-align: center;
   font-family: 'PT Serif', serif;
   background: #A3BFD8;
+  color: #740a22;
   margin-left: -15px;
   margin-right: -15px;
   padding-top: 20px;
@@ -42,11 +43,11 @@ nav a {
   width: 100%;
 }
 nav a:visited {
-  color: #4D6A5B;
+  color: #740a22;
   text-decoration: none;
 }
 nav a:hover {
-  color: #4D6A5B;
+  color: #740a22;
   background-color: #EEE0CE;
   font-weight: bolder;
   opacity: 0.75;

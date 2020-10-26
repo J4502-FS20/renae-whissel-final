@@ -42,11 +42,11 @@ nav a {
   width: 100%;
 }
 nav a:visited {
-  color: #A3BFD8;
+  color: #4D6A5B;
   text-decoration: none;
 }
 nav a:hover {
-  color: #A3BFD8;
+  color: #4D6A5B;
   background-color: #EEE0CE;
   font-weight: bolder;
   opacity: 0.75;

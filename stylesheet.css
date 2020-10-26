@@ -1,0 +1,40 @@
+font-family: 'Montserrat', sans-serif;
+font-family: 'Commissioner', sans-serif;
+
+h1 {
+  font-size: 3em;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-align: center;
+  color: 541222;
+}
+
+h2 {
+ font-size: 2.33em;
+ font-family: 'Playfair Display', serif;
+ font-weight: bold;
+ text-align: center;
+ color: 541222;
+}
+
+nav {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  background: #a0757b;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+body {
+  background-color: D4C4C7;
+  font-family: 'PT Serif', serif;
+}
+
+p {
+ font-family: 'PT Serif', serif;
+  font-size: 1em;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 50px;
+}

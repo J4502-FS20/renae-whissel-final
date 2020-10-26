@@ -1,12 +1,9 @@
-font-family: 'Montserrat', sans-serif;
-font-family: 'Commissioner', sans-serif;
-
 h1 {
   font-size: 3em;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   text-align: center;
-  color: 541222;
+  color: #541222;
 }
 
 h2 {
@@ -14,7 +11,7 @@ h2 {
  font-family: 'Playfair Display', serif;
  font-weight: bold;
  text-align: center;
- color: 541222;
+ color: #541222;
 }
 
 nav {

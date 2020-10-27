@@ -72,3 +72,12 @@ p {
 a:link {
   color: #740a22;
 }
+
+img {
+  width:90%;
+  min-width:500px;
+  max-width: 1200px;
+  border:none;
+  margin:center;
+  text-align: center;
+}

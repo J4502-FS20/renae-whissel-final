@@ -79,5 +79,6 @@ img {
   max-width: 1200px;
   border:none;
   margin:center;
-  text-align:center;
+  display: flex;
+  justify-content: flex-start;
 }

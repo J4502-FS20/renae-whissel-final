@@ -78,7 +78,7 @@ img {
   min-width:500px;
   max-width: 1200px;
   border:none;
-  margin:center;
+  margin:auto;
   display: flex;
   justify-content: flex-start;
   background-color: #A3BFD8;

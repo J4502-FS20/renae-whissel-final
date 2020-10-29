@@ -94,3 +94,9 @@ blockquote {
    font-weight: bold;
    font-style:italic;
 }
+
+caption {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 1em;
+  margin:auto;
+}

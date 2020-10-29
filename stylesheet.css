@@ -111,11 +111,12 @@ caption {
   margin:auto;
 }
 
-ul {
+ul.centered {
+  list-style-type:none;
   text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen {
   .column {
     width: 80%;
   }

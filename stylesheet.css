@@ -45,6 +45,7 @@ nav {
   padding-left: 50px;
   padding-right: 50px;
   text-decoration: none;
+  display: flex;
   justify-content: space-between;
   .center{
     justify-content: center;

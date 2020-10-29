@@ -116,15 +116,6 @@ ul {
   text-align: center;
 }
 
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 8px;
-}
-
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;

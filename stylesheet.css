@@ -26,6 +26,13 @@ h2 {
  color: #173963;
 }
 
+h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: bold;
+}
+
 nav {
   text-align: center;
   font-family: 'PT Serif', serif;

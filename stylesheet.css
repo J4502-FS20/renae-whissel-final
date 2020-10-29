@@ -44,6 +44,9 @@ nav {
   padding-bottom: 20px;
   text-decoration: none;
   justify-content: space-around;
+  .center{
+    justify-content: center;
+  }
 }
 
 nav a {

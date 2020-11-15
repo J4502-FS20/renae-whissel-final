@@ -48,8 +48,7 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  .center{
-    justify-content: center;
+  .center{justify-content: center;
   }
 }
 

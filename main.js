@@ -1,39 +1,35 @@
 /*jshint esversion: 6 */
-"use strict".
+"use strict";
 
-let qs = (selector, context = document) => context.querySelector(selector);
-let qsa = (selector, context = document) =>
-  Array.from(context.querySelectorAll(selector));
+var photoDivs = document.getElementsByClassName("imageHolder");
 
-function openLightbox(e) {
-  const gitem = e.currentTarget,
-    itemimg = qs("img", gitem),
-    itemtext = qs(".gallery-item-text", gitem),
-    itemUrl = itemtext.dataset.url;
+var nextButton = document.getElementById("button_next");
 
-  const lightbox = qs(".lightbox"),
-    lightboximg = qs(".lb-img", lightbox),
-    lightboxtext = qs(".lb-text", lightbox),
-    lightboxDataURL = qs(".lb-url", lightbox);
-  lightboximg.onload = () => {
+var previousButton = document.getElementById("button_previous");
 
-    lightboxtext.innerHTML = itemtext.innerHTML;
-    lightboxDataURL.setAttribute("href", itemUrl);
-    lightbox.classList.add("open");
-  };
 
-  lightboximg.setAttribute("src", itemimg.getAttribute("src"));
-}
-function closeLightbox(e) {
-  e.preventDefault();
-  const lightbox = e.currentTarget.closest(".lightbox");
-  lightbox.classList.remove("open");
-}
-document.addEventListener("DOMContentLoaded", () => {
-  const lightbox = qs(".lightbox.preload");
-  if (lightbox) lightbox.classList.remove("preload");
-  const gitems = qsa(".gallery-item");
-  gitems.forEach((el) => el.addEventListener("click", openLightbox));
-  const lbclose = qs(".lightbox .close");
-  if (lbclose) lbclose.addEventListener("click", closeLightbox);
+var currentPhotoNumber = 0;
+
+photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
+nextButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThisDiv");
+  currentPhotoNumber = currentPhotoNumber + 1;
+
+  if (currentPhotoNumber === photoDivs.length) {
+    currentPhotoNumber = 0;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
 });
+
+previousButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThisDiv");
+  currentPhotoNumber = currentPhotoNumber - 1;
+
+  if (currentPhotoNumber < 0) {
+    currentPhotoNumber = photoDivs.length - 1;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');});

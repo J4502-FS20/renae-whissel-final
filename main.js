@@ -22,8 +22,6 @@ nextButton.addEventListener('click', function () {
 
     photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
 
-});
-
 previousButton.addEventListener('click', function () {
     photoDivs[currentPhotoNumber].classList.add("hideThisDiv");
     currentPhotoNumber = currentPhotoNumber - 1;
@@ -33,15 +31,12 @@ previousButton.addEventListener('click', function () {
     }
 
     photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
-});
-"use strict";
 
 var photoDivs = document.getElementsByClassName("imageHolder");
 
 var nextButton = document.getElementById("button_next");
 
 var previousButton = document.getElementById("button_previous");
-
 
 var currentPhotoNumber = 0;
 
@@ -56,8 +51,6 @@ nextButton.addEventListener('click', function() {
   }
 
   photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
-
-});
 
 previousButton.addEventListener('click', function() {
   photoDivs[currentPhotoNumber].classList.add("hideThisDiv");

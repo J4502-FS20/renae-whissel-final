@@ -1,4 +1,5 @@
-"use strict";
+/*jshint esversion: 6 */
+"use strict".
 
 let qs = (selector, context = document) => context.querySelector(selector);
 let qsa = (selector, context = document) =>

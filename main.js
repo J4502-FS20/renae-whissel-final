@@ -1,27 +1,38 @@
 "use strict";
 
-var slideIndex = 1;
-showSlides(slideIndex);
+let qs = (selector, context = document) => context.querySelector(selector);
+let qsa = (selector, context = document) =>
+  Array.from(context.querySelectorAll(selector));
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function openLightbox(e) {
+  const gitem = e.currentTarget,
+    itemimg = qs("img", gitem),
+    itemtext = qs(".gallery-item-text", gitem),
+    itemUrl = itemtext.dataset.url;
 
-function showSlides(n) {
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  const lightbox = qs(".lightbox"),
+    lightboximg = qs(".lb-img", lightbox),
+    lightboxtext = qs(".lb-text", lightbox),
+    lightboxDataURL = qs(".lb-url", lightbox);
+  lightboximg.onload = () => {
+
+    lightboxtext.innerHTML = itemtext.innerHTML;
+    lightboxDataURL.setAttribute("href", itemUrl);
+    lightbox.classList.add("open");
+  };
+
+  lightboximg.setAttribute("src", itemimg.getAttribute("src"));
 }
+function closeLightbox(e) {
+  e.preventDefault();
+  const lightbox = e.currentTarget.closest(".lightbox");
+  lightbox.classList.remove("open");
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = qs(".lightbox.preload");
+  if (lightbox) lightbox.classList.remove("preload");
+  const gitems = qsa(".gallery-item");
+  gitems.forEach((el) => el.addEventListener("click", openLightbox));
+  const lbclose = qs(".lightbox .close");
+  if (lbclose) lbclose.addEventListener("click", closeLightbox);
+});

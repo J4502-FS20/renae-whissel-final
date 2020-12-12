@@ -172,7 +172,6 @@ ul.centered {
   background: linear-gradient(to right, #355460, #283048);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(200px, -webkit-max-content);
   grid-auto-rows: minmax(200px, max-content);
   grid-auto-flow: dense;
   gap: 10px;
@@ -182,7 +181,6 @@ ul.centered {
 
 .gallery-item img {
   cursor: pointer;
-  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -228,7 +226,6 @@ ul.centered {
 }
 
 .lightbox .lb-img {
-  -o-object-fit: contain;
   object-fit: contain;
   margin-bottom: 8px;
   display: block;

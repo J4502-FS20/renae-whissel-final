@@ -10,6 +10,8 @@ for (var i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function() {
     selectedImg.innerHTML = this.innerHTML;
 
+var photoDivs = document.getElementsByClassName("imageHolder");
+
 var nextButton = document.getElementById(button_next);
 
 var previousButton = docomunt.getElementById(button_previous);
@@ -35,7 +37,6 @@ previosButton.addEventListener('click', function() {
   if(currentPhotoNumber <0) {
     currentPhotoNumber = photoDivs.length - 1;
   }
-
   photoDivs[currentPhotoNumber].classList.remove('hideThisDiv')
 })
   });

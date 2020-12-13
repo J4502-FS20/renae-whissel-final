@@ -1,5 +1,7 @@
 "use strict";
 
+var photoDivs = document.getElementsByClassName("imageHolder");
+
 var selectedImg = document.getElementById("selected_img");
 
 var images = document.getElementsByClassName("image");

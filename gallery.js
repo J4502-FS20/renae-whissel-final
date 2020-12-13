@@ -24,10 +24,12 @@ nextButton.addEventListener('click', function() {
   photoDivs[currentPhotoNumber].classList.add(hideThisDiv)
   currentPhotoNumber = currentPhotoNumber + 1;
 
+  console.log(currentPhotoNumber);
+
   if (currentPhotoNumber === photoDivs.length){
     curentPhotoNumber = 0;
   }
-  photoDivs[currentPhotoNumber.classList.remove('hideThisDiv')]
+  photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
 });
 
 previosButton.addEventListener('click', function() {

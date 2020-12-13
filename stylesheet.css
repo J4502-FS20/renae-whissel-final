@@ -55,10 +55,12 @@ nav a {
   text-decoration: none;
   width: 90%;
 }
+
 nav a:visited {
   color: #740a22;
   text-decoration: none;
 }
+
 nav a:hover {
   color: #740a22;
   background-color: #EEE0CE;

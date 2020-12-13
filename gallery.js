@@ -1,7 +1,5 @@
 "use strict";
 
-var photoDivs = document.getElementsByClassName("imageHolder");
-
 var selectedImg = document.getElementById("selected_img");
 
 var images = document.getElementsByClassName("image");
@@ -11,5 +9,23 @@ selectedImg.innerHTML = images[0].innerHTML;
 for (var i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function() {
     selectedImg.innerHTML = this.innerHTML;
+
+var nextButton = document.getElementById(button_next);
+
+var previousButton = docomunt.getElementById(button_previous);
+
+var currentPhotoNumber = currentPhotoNumber;
+
+photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
+nextButton.addEventListener('click', function()) {
+  photoDivs[currentPhotoNumber].classList.add(hideThisDiv)
+  currentPhotoNumber = currentPhotoNumber + 1;
+
+  if (currentPhotoNumber === photoDivs.length){
+    curentPhotoNumber = 0;
+  }
+  photoDivs[currentPhotoNumber.classList.add]
+}
   });
 }

@@ -143,6 +143,7 @@ ul.centered {
       margin: auto;
       max-width: 1200px;
   }
+  
   .imageGallery {
     display: flex;
     flex-direction: column;

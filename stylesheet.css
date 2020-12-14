@@ -26,6 +26,13 @@ h2 {
  color: #173963;
 }
 
+h2 a {
+  color: #173963;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;

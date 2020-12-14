@@ -141,7 +141,7 @@ ul.centered {
   .container img {
       display: flex;
       margin: auto;
-      max-width: 1000px;
+      max-width: 1200px;
   }
   .imageGallery {
     display: flex;
@@ -153,11 +153,12 @@ ul.centered {
 
   .imageHolder {
     margin: 20px 0;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family:'Montserrat', sans-serif;
   }
 
   .imageHolder figcaption {
     margin: 10px 0;
+    font-family:'Montserrat', sans-serif;
   }
 
   img {

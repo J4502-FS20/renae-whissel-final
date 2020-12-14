@@ -1,13 +1,35 @@
 "use strict";
 
-var selectedImg = document.getElementById("selected_img");
+var photoDivs = document.getElementsByClassName("imageHolder");
 
-var images = document.getElementsByClassName("image");
+var nextButton = document.getElementById("button_next");
 
-selectedImg.innerHTML = images[0].innerHTML;
+var previousButton = document.getElementById("button_previous");
 
-for (var i = 0; i < images.length; i++) {
-  images[i].addEventListener("click", function() {
-    selectedImg.innerHTML = this.innerHTML;
-  });
-}
+var currentPhotoNumber = 0;
+
+photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
+nextButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThisDiv");
+  currentPhotoNumber = currentPhotoNumber + 1;
+
+  if (currentPhotoNumber === photoDivs.length) {
+    currentPhotoNumber = 0;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
+});
+
+previousButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThisDiv");
+  currentPhotoNumber = currentPhotoNumber - 1;
+
+  if (currentPhotoNumber < 0) {
+    currentPhotoNumber = photoDivs.length - 1;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThisDiv');
+
+});

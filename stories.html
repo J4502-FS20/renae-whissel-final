@@ -12,20 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
-  <style>
-  .row {
-    display: flex;
-  }
 
-    .column {
-      flex: 33.33%;
-      padding: 8px;
-    }
-    img {
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
 </head>
 
 <body>
@@ -59,29 +46,34 @@
 </blockquote>
 <p>*Maryam requested her last name not be published because she is currently searching for a job and is concerned about potential employers seeing her story.</p>
 
-<main id="gallery_holder">
-  <div id="selected_img">
+<section class="imageGallery" id="myGallery">
+      <section class="imageHolder hideThisDiv">
+        <img src="maryam-luna.jpeg" alt="Maryam and her cat, Luna.">
+        <figcaption>Maryam with her emotional support cat, Luna</figcaption>
+    </section>
+      <section class="imageHolder hideThisDiv">
+        <img src="desk.jpeg" alt="A makeshift desk made out of a cardboard box next to a drying rack.">
+       <figcaption>Maryam's makeshift desk made out of a cardboard box and covered by a table cloth donated by a friend.</figcaption>
+     </section>
+      <section class="imageHolder hideThisDiv">
+        <img src="maryam.jpeg" alt="Mayam with bruised nose.">
+        <figcaption>Maryam's nose was bruised after wearing two face masks for more than 36 hours due to COVID-19.</figcaption>
+      </section>
+      <section class="imageHolder hideThisDiv">
+        <img src="plant.jpeg" alt="A basil plant hanging from a cabinet.">
+       <figcaption>A basil plant that Maryam's friends gave to her hangs to dry 'because no food goes wasted here'.</figcaption>
+     </section>
+      <section class="imageHolder hideThisDiv">
+        <img src="maryam-side.jpeg" alt="Side profile of Maryam.">
+        <figcaption>Side profile of Maryam.</figcaption>
+      </section>
 
-  </div>
-  <div id="image_gallery">
-    <div class="image"><img src="maryam-luna.jpeg" alt="Maryam and her cat, Luna.">
-        <p>Maryam with her emotional support cat, Luna</p>
-    </div>
-     <div class="image"><img src="desk.jpeg" alt="A makeshift desk made out of a cardboard box next to a drying rack.">
-       <p>Maryam's makeshift desk made out of a cardboard box and covered by a table cloth donated by a friend.</p>
-     </div>
-     <div class="image"><img src="maryam.jpeg" alt="Mayam with bruised nose.">
-        <p>Maryam's nose was bruised after wearing two face masks for more than 36 hours due to COVID-19.</p>
-      </div>
-     <div class="image"><img src="plant.jpeg" alt="A basil plant hanging from a cabinet.">
-       <p>A basil plant that Maryam's friends gave to her hangs to dry 'because no food goes wasted here'.</p>
-     </div>
-     <div class="image"><img src="maryam.jpeg" alt="Side profile of Maryam.">
-        <p>Side profile of Maryam.</p>
+      <div class="button_holder">
+       <button id="button_previous">Previous</button>
+       <button id="button_next">Next</button>
       </div>
 
-  </div>
-</main>
+  </section>
 
 <p>More stories coming soon!</p>
 
